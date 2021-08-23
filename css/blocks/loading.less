@@ -1,0 +1,115 @@
+//main: ../style.less
+
+.frame {
+  margin-top: 177px;
+  //position: absolute;
+  //top: 50%;
+  //left: 50%;
+  //width: 400px;
+  //height: 400px;
+  //margin-top: -200px;
+  //margin-left: -200px;
+  border-radius: 3px;
+  //box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  //background: #d6e228;
+ // background: linear-gradient(145deg, #413951 0%, #201c29 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#413951', endColorstr='#201c29', GradientType=0);
+  //color: rgb(167, 66, 66);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.circles-small {
+  text-align: center;
+}
+
+.circle-small {
+  display: inline-block;
+  position: relative;
+}
+
+.circle-small svg {
+  background-color: #FCF9DF;
+  border-radius: 50%;
+  width: 196px;
+  height: 196px;
+}
+
+.circle-small .bg {
+  fill: none;
+}
+
+img {
+  padding-top: 43px;
+}
+
+
+
+
+
+.circle-small .progress {
+   fill: none;
+   stroke-width: 8px;
+   stroke: #FFCE3F;
+   stroke-linecap: round;
+   stroke-dasharray: 602.88;
+   transform: rotate(-90deg);
+   transform-origin: 50% 50%;
+
+}
+
+.circle-small .progress.two {
+  stroke-dashoffset: 602.88;
+  animation: two 3.5s ease-in-out;
+}
+
+.circle-small .text {
+  position: absolute;
+  width: 100%;
+  top: 26px;
+  font-size: 17px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+
+@keyframes two {
+  from {
+    stroke-dashoffset: 602.88;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.percent {
+  margin-top: 35px;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: @black;
+}
+
+.loading__text {
+  margin-top: 20px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: @black;
+}
+
+
